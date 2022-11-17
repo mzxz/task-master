@@ -9,11 +9,13 @@ def todolist(request):
         }
     return render(request, 'todolist.html', context)
 
+
 def contact(request):
     context = {
         'welcome_text':"Welcome From Contact Page."
         }
     return render(request, 'contact.html', context)
+
 
 def about(request):
     context = {
