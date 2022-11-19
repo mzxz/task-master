@@ -18,12 +18,21 @@
             </thead>
             <tbody>
             {% for obj in all_tasks %}
-                <tr>
-                    <td scope="row">{{obj.task}}</td>
-                    <td>{{obj.done}}</td>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                </tr>
+                {% if obj.done %}
+                    <tr class="table-success">
+                        <td scope="row">{{obj.task}}</td>
+                        <td>Completed</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+                    {% else %}
+                        <tr>
+                            <td scope="row">{{obj.task}}</td>
+                            <td>Not completed</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
+                        </tr>
+                {% endif %}
             {% endfor %}
             </tbody>
         </table>
