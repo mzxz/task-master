@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['taskmaster02.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['task-master0.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -61,7 +61,7 @@ ROOT_URLCONF = 'taskmaster.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [(os.path.join(BASE_DIR, 'templates')),],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
