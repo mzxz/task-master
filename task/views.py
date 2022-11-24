@@ -5,6 +5,8 @@ from task.forms import TaskForm
 from django.contrib import messages
 
 # Create your views here.
+
+
 def todolist(request):
     if request.method == "POST":
         form = TaskForm(request.POST or None)
@@ -17,15 +19,22 @@ def todolist(request):
         return render(request, 'todolist.html', {'all_tasks': all_tasks})
 
 
+def delete_task(request, task_id):
+    task = TaskList.objects.get(pk=task_id)
+    task.delete()
+    
+    return redirect('todolist')
+
+
 def contact(request):
     context = {
-        'contact_text':"Welcome From Contact Page."
+        'contact_text': "Welcome From Contact Page."
         }
     return render(request, 'contact.html', context)
 
 
 def about(request):
     context = {
-        'about_text':"Welcome From About Us Page."
+        'about_text': "Welcome From About Us Page."
         }
     return render(request, 'about.html', context)
