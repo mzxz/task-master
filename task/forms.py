@@ -3,5 +3,5 @@ from task.models import TaskList
 
 class TaskForm(forms.ModelForm):
     class Meta:
-        model = TaskList()
+        model = TaskList
         fields = ['task', 'done']
