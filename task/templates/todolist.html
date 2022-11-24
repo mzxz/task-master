@@ -7,12 +7,24 @@
 {% block content %}
     <div class="container">
         <br>
+
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+
         <form method="POST">
             {% csrf_token %}
             <div class="form-group">
               <input type="text" class="form-control" name="task" placeholder="Add neaw Task">
             </div>
-            
+
             <button type="submit" class="btn btn-primary">Add Task</button>
           </form>
           <br>
@@ -26,23 +38,25 @@
                 </tr>
             </thead>
             <tbody>
-            {% for obj in all_tasks %}
-                {% if obj.done %}
-                    <tr class="table-success">
-                        <td scope="row">{{obj.task}}</td>
-                        <td>Completed</td>
-                        <td>Edit</td>
-                        <td>Delete</td>
-                    </tr>
-                    {% else %}
-                        <tr>
+            {% if all_tasks %}
+                {% for obj in all_tasks %}
+                    {% if obj.done %}
+                        <tr class="table-success">
                             <td scope="row">{{obj.task}}</td>
-                            <td>Not completed</td>
+                            <td>Completed</td>
                             <td>Edit</td>
                             <td>Delete</td>
                         </tr>
-                {% endif %}
-            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td scope="row">{{obj.task}}</td>
+                                <td>Not completed</td>
+                                <td>Edit</td>
+                                <td>Delete</td>
+                            </tr>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
             </tbody>
         </table>
     </div>
