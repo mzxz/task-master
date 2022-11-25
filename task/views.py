@@ -20,14 +20,12 @@ def todolist(request):
         paginator = Paginator(all_tasks, 5)
         page = request.GET.get('pg')
         all_tasks = paginator.get_page(page)
-
         return render(request, 'todolist.html', {'all_tasks': all_tasks})
 
 
 def delete_task(request, task_id):
     task = TaskList.objects.get(pk=task_id)
-    task.delete()
-    
+    task.delete() 
     return redirect('todolist')
 
 
@@ -60,7 +58,7 @@ def pending_task(request, task_id):
 
     return redirect('todolist')
 
-    
+
 def contact(request):
     context = {
         'contact_text': "Welcome From Contact Page."
