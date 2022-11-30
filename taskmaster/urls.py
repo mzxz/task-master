@@ -19,6 +19,8 @@ from task import views as task_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
+    path('', task_views.index, name='index'),
     path('tasklist/', include('task.urls')),
     path('contact', task_views.contact, name='contact'),
     path('about-us', task_views.about, name='about'),
