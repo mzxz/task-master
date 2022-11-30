@@ -26,9 +26,9 @@
             <button type="submit" class="btn btn-primary col-lg-2">Add Task</button>
           </form>
           <br>
-        <table class="table table-bordered">
+        <table class="table table-bordered text-center">
             <thead class="thead-dark">
-                <tr>
+                <tr class="row">
                     <th scope="col">Task</th>
                     <th scope="col">Done</th>
                     <th scope="col">Edit</th>
@@ -39,18 +39,18 @@
             {% if all_tasks %}
                 {% for obj in all_tasks %}
                     {% if obj.done %}
-                        <tr class="table-success">
+                        <tr class="table-success row">
                             <td>{{obj.task}}</td>
-                            <td><a href="{% url 'pending_task' obj.id %}">Mark As Pending</a></td>
-                            <td><a href="{% url 'edit_task' obj.id %}">Edit</a></td>
-                            <td><a href="{% url 'delete_task' obj.id %}">Delete</a></td>
+                            <td><a href="{% url 'pending_task' obj.id %}"><button type="button" class="btn btn-secondary">Mark As Pending</button</a></td>
+                            <td><a href="{% url 'edit_task' obj.id %}"><button type="button" class="btn btn-warning">Edit</button></a></td>
+                            <td><a href="{% url 'delete_task' obj.id %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
                         </tr>
                         {% else %}
-                            <tr>
+                            <tr class="row">
                                 <td>{{obj.task}}</td>
-                                <td><a href="{% url 'complete_task' obj.id %}">Mark As completed</a></td>
-                                <td><a href="{% url 'edit_task' obj.id %}">Edit</a></td>
-                                <td><a href="{% url 'delete_task' obj.id %}">Delete</a></td>
+                                <td><a href="{% url 'complete_task' obj.id %}"><button type="button" class="btn btn-secondary">Mark As completed</button</a></td>
+                                <td><a href="{% url 'edit_task' obj.id %}"><button type="button" class="btn btn-warning">Edit</button></a></td>
+                                <td><a href="{% url 'delete_task' obj.id %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
                             </tr>
                     {% endif %}
                 {% endfor %}
