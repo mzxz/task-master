@@ -22,6 +22,7 @@ urlpatterns = [
 
     path('', task_views.index, name='index'),
     path('tasklist/', include('task.urls')),
+    path('account/', include('users_app.urls')),
     path('contact', task_views.contact, name='contact'),
     path('about-us', task_views.about, name='about'),
 ]
