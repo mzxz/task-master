@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'task',
     'users_app',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -142,3 +143,7 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Let crispy use Bootstrap 4
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
