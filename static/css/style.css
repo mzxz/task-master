@@ -1,0 +1,15 @@
+.cards {
+    width: 360px;
+    height: 250px;
+
+}
+
+td {
+    line-break: auto;
+}
+
+@media only screen and (max-width: 421px) {
+    body {
+      width: 421px;
+    }
+  }

@@ -10,11 +10,3 @@ addNewTask.addEventListener("keyup", (e) => {
     }
 });
 
-// function empty() {
-//     var x;
-//     x = document.getElementById("add-new-task").value;
-//     if (x == "") {
-//         alert("Enter a Valid Roll Number");
-//         return false;
-//     };
-// }
