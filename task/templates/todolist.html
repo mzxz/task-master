@@ -23,7 +23,9 @@
             {% csrf_token %}
             <input autocomplete="off" id='noWhiteSpaceAtTheStart' 
                 type="text" oninput="validate(this)" class="col-lg-8 col-md-offset-2" 
-                name="task" placeholder="Add new Task" 
+                name="task" placeholder="Add new Task"
+                maxlength="30"
+                title="Max length is 30." 
                 required
             >
             <button id="submit-new-task" type="submit" onclick="" class="btn btn-primary col-lg-2">Add Task</button>

@@ -27,6 +27,10 @@ td {
         display: none;
     }
 
+    td {
+        line-break: anywhere;
+    }
+
     .btn {
       font-weight: 300;
       font-size: 1rem;
@@ -39,6 +43,7 @@ td {
     body {
         width: 478px;
         font-weight: 200;
+        line-height: 150%;
     }
     .btn {
         font-weight: 250;
