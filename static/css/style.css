@@ -20,8 +20,40 @@ td {
     top: 100%;
 }
 
-@media only screen and (max-width: 421px) {
-    body {
-        width: 421px;
+/* ----------------------Media Queries */
+
+@media(max-width: 820px) {
+    span.hide-text {
+        display: none;
     }
+
+    .btn {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 478px) {
+    body {
+        width: 478px;
+        font-weight: 200;
+    }
+    .btn {
+        font-weight: 250;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 379px) {
+    body {
+        width: 379px;
+        font-weight: 200;
+    }
+    .btn {
+        font-weight: 200;
+        font-size: 0.75rem;
+    }
+
 }
