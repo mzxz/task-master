@@ -19,10 +19,14 @@
             {% endfor %}
         {% endif %}
 
-        <form method="POST" class="row">
+        <form method="POST" class="row task-form">
             {% csrf_token %}
-            <input autocomplete="off"  id="add-new-task" type="text" class="form-control col-lg-8 col-md-offset-2" name="task" placeholder="Add new Task">
-            <button disabled id="submit-new-task" type="submit" onclick="" class="btn btn-primary col-lg-2">Add Task</button>
+            <input autocomplete="off" id='noWhiteSpaceAtTheStart' 
+                type="text" oninput="validate(this)" class="col-lg-8 col-md-offset-2" 
+                name="task" placeholder="Add new Task" 
+                required
+            >
+            <button id="submit-new-task" type="submit" onclick="" class="btn btn-primary col-lg-2">Add Task</button>
           </form>
           <br>
         <table class="table table-bordered text-center">
