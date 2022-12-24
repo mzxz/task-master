@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 
 class TaskList(models.Model):
     manage = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
-    task = models.CharField(max_length=30)
+    task = models.CharField(max_length=300)
     done = models.BooleanField(default=False)
 
     def __str__(self):
