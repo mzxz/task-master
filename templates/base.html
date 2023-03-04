@@ -41,11 +41,11 @@
         {% if user.is_authenticated %}
         <div class="form-inline my-2 my-lg-0">
             <div class="p-2 bg-dark text-white">Welcome {{ user.username }}</div>
-            <a href="{% url 'logout' %}" class="btn btn-info my-2 my-sm-0" type="submit">Logout</a>
+            <a href="{% url 'logout' %}" class="btn btn-info my-2 my-sm-0">Logout</a>
         </div>
         {% else %}
-        <a href="{% url 'login' %}" class="btn btn-success mr-2 my-2 my-sm-0" type="submit">Login</a>
-        <a href="{% url 'register' %}" class="btn btn-primary my-2 my-sm-0" type="submit">Register</a>
+        <a href="{% url 'login' %}" class="btn btn-success mr-2 my-2 my-sm-0">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-primary my-2 my-sm-0">Register</a>
         {% endif %}
 
     </nav>
