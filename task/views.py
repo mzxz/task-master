@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+
 @login_required()
 def todolist(request):
     if request.method == "POST":
@@ -30,7 +31,7 @@ def todolist(request):
 def delete_task(request, task_id):
     task = TaskList.objects.get(pk=task_id)
     if task.manage == request.user:
-        task.delete() 
+        task.delete()
     else:
         messages.error(request, ("Access Denied, You Are Not Allowed!"))
     return redirect('todolist')
@@ -55,7 +56,7 @@ def edit_task(request, task_id):
 def complete_task(request, task_id):
     task = TaskList.objects.get(pk=task_id)
     if task.manage == request.user:
-        task.done = True    
+        task.done = True
         task.save()
     else:
         messages.error(request, ("Access Denied, You Are Not Allowed!"))
@@ -65,7 +66,7 @@ def complete_task(request, task_id):
 @login_required()
 def pending_task(request, task_id):
     task = TaskList.objects.get(pk=task_id)
-    task.done = False    
+    task.done = False
     task.save()
 
     return redirect('todolist')
