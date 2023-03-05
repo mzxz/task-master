@@ -42,11 +42,11 @@
         {% if user.is_authenticated %}
         <div class="form-inline my-2 my-lg-0">
             <div class="p-2 bg-dark text-white">Welcome {{ user.username }}</div>
-            <a href="{% url 'logout' %}" class="btn btn-info my-2 my-sm-0">Logout</a>
+            <a href="{% url 'logout' %}" class="btn btn-info my-2 my-sm-0 font-weight-bold btn-lg">Logout</a>
         </div>
         {% else %}
-        <a href="{% url 'login' %}" class="btn btn-success mr-2 my-2 my-sm-0">Login</a>
-        <a href="{% url 'register' %}" class="btn btn-primary my-2 my-sm-0">Register</a>
+        <a href="{% url 'login' %}" class="btn btn-success btn-lg mr-2 my-2 my-sm-0 font-weight-bold btn-lg">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg my-2 my-sm-0 font-weight-bold">Register</a>
         {% endif %}
 
     </nav>
@@ -65,23 +65,29 @@
             <!-- Social media -->
             <div class="mb-4">
                 <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Facebook"><i class="fa-brands fa-facebook"></i>
                 </a>
 
                 <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Twitter"><i class="fab fa-twitter"></i></a>
 
                 <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank"><i class="fab fa-google"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.google.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Google"><i class="fab fa-google"></i></a>
 
                 <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Instagram"><i class="fab fa-instagram"></i></a>
 
                 <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Linkedin"><i class="fab fa-linkedin-in"></i></a>
 
                 <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.github.com/" target="_blank"  rel="noopener" 
+                aria-label="Visit Us On Github"><i class="fab fa-github"></i></a>
             </div>
             <!-- Social media -->
         </div>
