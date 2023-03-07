@@ -1,6 +1,6 @@
 # Welcome to Taskmaster
 ## Live link https://task-master0.herokuapp.com/
-![Responsice Mockup](https://res-console.cloudinary.com/ddjtquzpc/thumbnails/v1/image/upload/v1678153838/cDRyZWFkbWUvaG9tZV9vcmJucnI=/preview)
+![Responsice Mockup](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678153838/p4readme/home_orbnrr.png)
 
 ## Features 
 
