@@ -54,10 +54,12 @@ I used W3C validator for HTML and Jigsaw Validator for CSS.
   - Pass
 ### [CSS - Jigsaw CSS Validator](https://validator.w3.org/)
   - Pass
- ### Jest
-  - Pass
+ ### Javascript
+  - Test through Jshint with no errors found.
 ### Unittest
   - Pass
+### Python
+  - Test through Pep8 with no errors found.
 ### Lighthouse - Dev Tools
 ![Lighthouse](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678153897/p4readme/Lighthouse_-_Dev_nxqnia.png)
 I have used dev tool to improve my site styles and adjust it. 
@@ -70,8 +72,17 @@ I used to test and modifiy the the pages in general.
 I tested all links across all pages and all will working.
 
 -------------------------------------------------------------------------------------------------
-
-
+## -Deployment-
+![1](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163318/p4readme/deploy/1_fuzarc.png)
+![2](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163318/p4readme/deploy/2_szwdud.png)
+![3](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163318/p4readme/deploy/3_paphmy.png)
+![4](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163318/p4readme/deploy/4_nvwukn.png)
+![5](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163319/p4readme/deploy/5_w84vdg.png)
+![6](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163319/p4readme/deploy/6_y0slwr.png)
+![7](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163319/p4readme/deploy/7_ik7jcm.png)
+![8](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163319/p4readme/deploy/8_eciyz1.png)
+![9](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678163319/p4readme/deploy/9_qaalxd.png)
+-------------------------------------------------------------------------------------------------
 __Creadit__
 
  - Code Institute
@@ -83,6 +94,11 @@ __Creadit__
  - https://www.youtube.com/watch?v=YGTNhLsF-_Q
  - https://knockoutjs.com/documentation/visible-binding.html
  - https://stackoverflow.com/questions/50738490/prevent-a-white-space-in-the-beginning-of-a-input
+
+ ### Media
+
+- The photos from https://pixabay.com/
+- The icons from https://fontawesome.com/
 
 __For testing__
  - user name demo
