@@ -39,7 +39,38 @@ About us page.
 The footer shows social media links.
 ![Footer Screenshot](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678153813/p4readme/footer_iubb7l.png)
 
------------------------------------
+
+-------------------------------------------------------------------------------------------------
+
+## -Testing-
+
+All The site pages have been tested across all screen sizes for a responsive experience and web pages have been Styled accordingly.
+
+I used W3C validator for HTML and Jigsaw Validator for CSS.
+
+### -Validator Testing-
+
+### [HTML - W3C HTML Validator](https://jigsaw.w3.org/css-validator/)
+  - Pass
+### [CSS - Jigsaw CSS Validator](https://validator.w3.org/)
+  - Pass
+ ### Jest
+  - Pass
+### Unittest
+  - Pass
+### Lighthouse - Dev Tools
+![Lighthouse](https://res.cloudinary.com/ddjtquzpc/image/upload/v1678153897/p4readme/Lighthouse_-_Dev_nxqnia.png)
+I have used dev tool to improve my site styles and adjust it. 
+
+### Chrome Dev Tools and Responsive Mode
+
+I used to test and modifiy the the pages in general.
+
+### Links
+I tested all links across all pages and all will working.
+
+-------------------------------------------------------------------------------------------------
+
 
 __Creadit__
 
